@@ -1,0 +1,30 @@
+category = {
+	name = "Effects"
+	soundeffects = {
+		SE_Russia_unification_RUS_tabby_effect
+	}
+	compressor = {
+		enabled = yes
+		pregain = 3.0
+		postgain = 0.0
+		ratio = 10.0
+		threshold = -15.0
+		attacktime = 0.030
+		releasetime = 1.2
+	}
+}
+
+######################################
+soundeffect = {
+	name = "SE_Russia_unification_RUS_tabby_effect"
+	volume = 1.8
+	sounds = {
+		sound = SE_Russia_unification_RUS_tabby_01
+	}
+}
+######################################
+sound = {
+	name = "SE_Russia_unification_RUS_tabby_01"
+	file = "se/se_tabby_unified.wav"
+	always_load = yes
+}
