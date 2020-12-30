@@ -1,0 +1,26 @@
+spriteTypes = {
+
+	##################################
+	### Large images for DIVISIONS ###
+
+	spriteType = { name = "GFX_unit_rangers_icon_medium"			textureFile = "gfx/interface/counters/divisions_large/rangers.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_guards_infantry_icon_medium"			textureFile = "gfx/interface/counters/divisions_large/근위보병.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_guards_motorized_icon_medium"			textureFile = "gfx/interface/counters/divisions_large/근위차량화.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_guards_infantry_icon_medium"			textureFile = "gfx/interface/counters/divisions_large/근위보병.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_guards_medium_armor_icon_medium"			textureFile = "gfx/interface/counters/divisions_large/근위중형전차.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_guards_heavy_armor_icon_medium"			textureFile = "gfx/interface/counters/divisions_large/근위중전차.dds" noOfFrames = 2 }
+	
+	spriteType = { name = "GFX_unit_ss_medium_armor_icon_medium"			textureFile = "gfx/interface/counters/divisions_large/SS중형전차.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_ss_heavy_armor_icon_medium"			textureFile = "gfx/interface/counters/divisions_large/SS중전차.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_ss_mechanized_icon_medium"			textureFile = "gfx/interface/counters/divisions_large/친위기계화.dds" noOfFrames = 2 }
+	
+	
+	spriteType = { name = "GFX_unit_british_commandos_icon_medium"			textureFile = "gfx/interface/counters/divisions_large/코만도.dds" noOfFrames = 2 }
+
+	
+	####################################################
+	### Small images for DIVISIONS (On-map-counters) ###
+
+	spriteType = { name = "GFX_unit_rangers_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_icon.dds" noOfFrames = 2 }
+	
+}
