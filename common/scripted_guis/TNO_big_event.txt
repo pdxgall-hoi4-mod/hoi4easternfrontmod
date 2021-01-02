@@ -1,0 +1,26 @@
+scripted_gui = {
+
+	
+	FIS_SE_Russia_unification_RUS_tabby = {
+		context_type = player_context
+		window_name = "FIS_SE_Russia_unification_RUS_tabby"
+		
+		visible = {
+			has_country_flag = SE_Russia_unification_RUS_tabby_flag
+		}
+	}
+	
+	FIS_SE_Russia_unification_RUS_tabby_frame = {
+		context_type = player_context
+		window_name = "FIS_SE_Russia_unification_RUS_tabby_frame"
+		
+		visible = {
+			has_country_flag = SE_Russia_unification_RUS_tabby_flag
+		}
+		effects = {
+			Option_click = {
+				clr_country_flag = SE_Russia_unification_RUS_tabby_flag
+			}
+		}
+	}
+}
