@@ -1,0 +1,42 @@
+################
+#### SOVIET ####
+################
+
+SOV_industry_relocation = {
+	
+	allowed = {
+		original_tag = SOV
+	}
+
+	available = {
+		has_completed_focus = SOV_move_industry_to_urals
+	}
+
+	visible = {
+		has_war = yes
+	}
+}
+
+SOV_great_patriotic_war = {
+
+	picture = GFX_decision_soviet
+	
+	allowed = {
+		original_tag = SOV
+	}
+	visible = {
+		has_war = yes
+	}
+		
+}
+
+SOV_winter_war = {
+	
+	allowed = {
+		original_tag = SOV
+	}
+	visible = {
+		SOV = { has_war_with = FIN }
+	}
+		
+}

@@ -1,0 +1,432 @@
+﻿###########################
+#ss recruitment events
+###########################
+
+add_namespace = ss_event
+
+
+
+#SS motorized
+country_event = {
+	id = ss_event.1
+	title = ss_event.1.t	
+	desc = ss_event.1.desc	#
+	picture = GFX_report_event_german_volunteers					# 
+	
+	
+
+	is_triggered_only = yes
+	option = { 
+		name = ss_event.1.a #historical
+		
+	add_equipment_to_stockpile = {
+        type = mechanized_equipment_1
+        amount = 200
+        producer = GER
+    }
+	
+	division_template = {
+		name = "SS motorized-Division" 	#친위 차량화	
+		is_locked = yes
+		priority = 2
+		
+		regiments = {
+			ss_mechanized = { x = 0 y = 0 }
+			ss_mechanized = { x = 0 y = 1 }
+			ss_motorized = { x = 0 y = 2 }
+			ss_motorized = { x = 0 y = 3 }
+			ss_motorized = { x = 0 y = 4 }
+				
+			ss_mechanized = { x = 1 y = 0 }
+			ss_mechanized = { x = 1 y = 1 }
+			ss_motorized = { x = 1 y = 2 }
+			ss_motorized = { x = 1 y = 3 }
+				
+			ss_mechanized = { x = 2 y = 0 }
+			ss_mechanized = { x = 2 y = 1 }
+			ss_motorized = { x = 2 y = 2 }
+			ss_motorized = { x = 2 y = 3 }
+		
+			medium_tank_destroyer_brigade = { x = 3 y = 0 }
+				
+			mot_artillery_brigade = { x = 4 y = 0 }
+			mot_artillery_brigade = { x = 4 y = 1 }
+			mot_anti_tank_brigade = { x = 4 y = 2 }
+			
+		}
+		support = {
+			artillery = { x = 0 y = 0 } 		
+			recon = { x = 0 y = 1 } 	
+			field_hospital = { x = 0 y = 2 } 	
+			anti_tank = { x = 0 y = 3 }
+			logistics_company = { x = 0 y = 4 }
+			engineer = { x = 0 y = 5 }
+		}
+			
+		priority = 2
+	}
+		hidden_effect = {
+			64 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"SS motorized-Division\" start_experience_factor = 1 start_equipment_factor = 1"
+					owner = GER
+					prioritize_location = 6521
+				}
+			}
+			64 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"SS motorized-Division\" start_experience_factor = 1 start_equipment_factor = 1"
+					owner = GER
+					prioritize_location = 6521
+				}
+			}
+			64 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"SS motorized-Division\" start_experience_factor = 1 start_equipment_factor = 1"
+					owner = GER
+					prioritize_location = 6521
+				}
+			}
+			64 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"SS motorized-Division\" start_experience_factor = 1 start_equipment_factor = 1"
+					owner = GER
+					prioritize_location = 6521
+				}
+			}
+			64 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"SS motorized-Division\" start_experience_factor = 1 start_equipment_factor = 1"
+					owner = GER
+					prioritize_location = 6521
+				}
+			}
+			64 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"SS motorized-Division\" start_experience_factor = 1 start_equipment_factor = 1"
+					owner = GER
+					prioritize_location = 6521
+				}
+			}
+			64 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"SS motorized-Division\" start_experience_factor = 1 start_equipment_factor = 1"
+					owner = GER
+					prioritize_location = 6521
+				}
+			}
+		}
+	}
+}
+
+#SS panzer
+country_event = {
+	id = ss_event.2
+	title = ss_event.2.t	
+	desc = ss_event.2.desc	#
+	picture = GFX_report_event_german_volunteers					# 
+	
+	
+
+	is_triggered_only = yes
+	option = { 
+		name = ss_event.2.a #historical
+		
+    add_equipment_to_stockpile = {
+        type = mechanized_equipment_1
+        amount = 200
+        producer = GER
+    }
+division_template = {
+	name = "SS Panzer-Division"		#친위 전차사단	
+	priority = 2
+	is_locked = yes
+			
+	regiments = {
+		ss_medium_armor = { x = 0 y = 0 }
+        ss_medium_armor = { x = 0 y = 1 }
+		ss_medium_armor = { x = 0 y = 2 }
+		ss_medium_armor = { x = 0 y = 3 }
+				
+		ss_medium_armor = { x = 1 y = 0 }
+		ss_medium_armor = { x = 1 y = 1 }
+		ss_medium_armor = { x = 1 y = 2 }
+		ss_medium_armor = { x = 1 y = 3 }
+				
+		ss_mechanized = { x = 2 y = 0 }
+		ss_mechanized = { x = 2 y = 1 }
+		ss_motorized = { x = 2 y = 2 }
+		ss_motorized = { x = 2 y = 3 }
+		ss_motorized = { x = 2 y = 4 }
+
+		ss_mechanized = { x = 3 y = 0 }
+		ss_mechanized = { x = 3 y = 1 }
+		ss_motorized = { x = 3 y = 2 }
+		ss_motorized = { x = 3 y = 3 }
+				
+		mot_artillery_brigade = { x = 4 y = 0 }
+		mot_artillery_brigade = { x = 4 y = 1 }
+		mot_artillery_brigade = { x = 4 y = 2 }
+		mot_anti_tank_brigade =  { x = 4 y = 3}
+	}
+			
+	support = {
+		artillery = { x = 0 y = 0 } 		
+		recon = { x = 0 y = 1 } 	
+		field_hospital = { x = 0 y = 2 } 	
+		anti_tank = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 4 }
+		engineer = { x = 0 y = 5 }
+	}
+}
+		hidden_effect = {
+			64 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"SS Panzer-Division\" start_experience_factor = 1 start_equipment_factor = 1"
+					owner = GER
+					prioritize_location = 6521
+				}
+			}
+			64 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"SS Panzer-Division\" start_experience_factor = 1 start_equipment_factor = 1"
+					owner = GER
+					prioritize_location = 6521
+				}
+			}
+			64 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"SS Panzer-Division\" start_experience_factor = 1 start_equipment_factor = 1"
+					owner = GER
+					prioritize_location = 6521
+				}
+			}
+			64 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"SS Panzer-Division\" start_experience_factor = 1 start_equipment_factor = 1"
+					owner = GER
+					prioritize_location = 6521
+				}
+			}
+		}
+	}
+}
+
+#SS heavy panzer
+country_event = {
+	id = ss_event.3
+	title = ss_event.3.t	
+	desc = ss_event.3.desc	#
+	picture = GFX_report_event_german_volunteers					# 
+	
+	
+
+	is_triggered_only = yes
+	option = { 
+		name = ss_event.3.a #historical
+		
+    add_equipment_to_stockpile = {
+        type = mechanized_equipment_1
+        amount = 200
+        producer = GER
+    }
+    add_equipment_to_stockpile = {
+        type = medium_tank_artillery_equipment_1
+        amount = 100
+        producer = GER
+    }
+    add_equipment_to_stockpile = {
+        type = medium_tank_destroyer_equipment_1
+        amount = 200
+        producer = GER
+    }
+	
+division_template = {
+	name = "SS Panzergrenadier-Division"  #친위 장갑척탄병
+	priority = 2
+	is_locked = yes
+			
+	regiments = {
+		ss_mechanized = { x = 0 y = 0 }
+		ss_mechanized = { x = 0 y = 1 }
+		ss_mechanized = { x = 0 y = 2 }
+		ss_motorized = { x = 0 y = 3 }
+		ss_motorized = { x = 0 y = 4 }
+				
+		ss_mechanized = { x = 1 y = 0 }
+		ss_mechanized = { x = 1 y = 1 }
+		ss_mechanized = { x = 1 y = 2 }
+		ss_motorized = { x = 1 y = 3 }
+		ss_motorized = { x = 1 y = 4 }
+				
+		ss_medium_armor = { x = 2 y = 0 }
+		ss_heavy_armor = { x = 2 y = 1 }
+		ss_heavy_armor = { x = 2 y = 2 }
+		ss_heavy_armor = { x = 2 y = 3 }
+				
+		mot_artillery_brigade = { x = 3 y = 0 }
+		mot_artillery_brigade = { x = 3 y = 1 }
+		mot_artillery_brigade = { x = 3 y = 2 }
+				
+		medium_tank_destroyer_brigade = { x = 4 y = 0 }
+		medium_tank_destroyer_brigade = { x = 4 y = 1 }
+		medium_sp_artillery_brigade = { x = 4 y = 2 }
+		medium_sp_artillery_brigade = { x = 4 y = 3 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 } 		
+		recon = { x = 0 y = 1 } 	
+		field_hospital = { x = 0 y = 2 } 	
+		anti_tank = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 4 }
+		engineer = { x = 0 y = 5 }
+	}
+}
+		hidden_effect = {
+			64 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"SS Panzergrenadier-Division\" start_experience_factor = 1 start_equipment_factor = 1"
+					owner = GER
+					prioritize_location = 6521
+				}
+			}
+			64 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"SS Panzergrenadier-Division\" start_experience_factor = 1 start_equipment_factor = 1"
+					owner = GER
+					prioritize_location = 6521
+				}
+			}
+			64 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"SS Panzergrenadier-Division\" start_experience_factor = 1 start_equipment_factor = 1"
+					owner = GER
+					prioritize_location = 6521
+				}
+			}
+		}
+	}
+}
+
+#SS 보안사단
+country_event = {
+	id = ss_event.4
+	title = ss_event.4.t	
+	desc = ss_event.4.desc	#
+	picture = GFX_report_event_german_volunteers					#
+	
+	
+
+	is_triggered_only = yes
+	option = { 
+		name = ss_event.4.a #historical
+division_template = {
+	name = "SS Security-Division"	#SS 보안사단
+
+	regiments = {
+		ss_police = { x = 0 y = 0 }				
+		ss_police = { x = 0 y = 1 }
+		ss_police = { x = 0 y = 2 }
+
+		ss_police = { x = 1 y = 0 }				
+		ss_police = { x = 1 y = 1 }
+	    ss_police = { x = 1 y = 2 }
+	
+	    ss_police = { x = 2 y = 0 }
+			
+	    artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 } 		
+		recon = { x = 0 y = 1 } 	
+	}
+}
+		hidden_effect = {
+			64 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"SS Security-Division\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = GER
+					prioritize_location = 6521
+				}
+			}
+			64 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"SS Security-Division\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = GER
+					prioritize_location = 6521
+				}
+			}
+			64 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"SS Security-Division\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = GER
+					prioritize_location = 6521
+				}
+			}
+			64 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"SS Security-Division\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = GER
+					prioritize_location = 6521
+				}
+			}
+			64 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"SS Security-Division\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = GER
+					prioritize_location = 6521
+				}
+			}
+			64 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"SS Security-Division\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = GER
+					prioritize_location = 6521
+				}
+			}
+			64 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"SS Security-Division\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = GER
+					prioritize_location = 6521
+				}
+			}
+			64 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"SS Security-Division\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = GER
+					prioritize_location = 6521
+				}
+			}
+			64 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"SS Security-Division\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = GER
+					prioritize_location = 6521
+				}
+			}
+			64 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"SS Security-Division\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = GER
+					prioritize_location = 6521
+				}
+			}
+			64 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"SS Security-Division\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = GER
+					prioritize_location = 6521
+				}
+			}
+			64 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"SS Security-Division\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = GER
+					prioritize_location = 6521
+				}
+			}
+		}
+	}
+}

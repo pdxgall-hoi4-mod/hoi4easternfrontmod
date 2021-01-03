@@ -1,0 +1,758 @@
+﻿add_namespace = guards
+
+# 가랖1
+country_event = {
+	id = guards.1
+	title = guards.1.t
+	desc = guards.1.d
+	picture = GFX_report_event_ger_civil_war
+
+	is_triggered_only = yes
+	
+	#신선한 가랖
+	option = {
+		name = guards.1.a
+		
+	    division_template = {
+		name = "Guards Strelkovaya Diviziya"  #근위 보병사단	
+		priority = 2
+	    division_names_group = SOV_GRD_01
+		is_locked = yes
+	
+		regiments = {
+			guards_infantry = { x = 0 y = 0 }
+			guards_infantry = { x = 0 y = 1 }
+			guards_infantry = { x = 0 y = 2 }
+		
+			guards_infantry = { x = 1 y = 0 }
+			guards_infantry = { x = 1 y = 1 }
+			guards_infantry = { x = 1 y = 2 }
+		
+			guards_infantry = { x = 2 y = 0 }
+
+			artillery_brigade = { x = 3 y = 0 }
+			artillery_brigade = { x = 3 y = 1 }
+			artillery_brigade = { x = 3 y = 2 }
+			
+		    medium_armor = { x = 4 y = 0 }
+		}
+		support = {
+			artillery = { x = 0 y = 0 } 		
+			recon = { x = 0 y = 1 } 	
+			field_hospital = { x = 0 y = 2 } 	
+			anti_tank = { x = 0 y = 3 }
+			logistics_company = { x = 0 y = 4 }
+		    engineer = { x = 0 y = 5 }
+			}
+		}
+		hidden_effect = {
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Strelkovaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Strelkovaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Strelkovaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+		}
+	}
+}
+
+#가랖2
+country_event = {
+	id = guards.2
+	title = guards.2.t
+	desc = guards.2.d
+	picture = GFX_report_event_spain_civil_war_volunteers_02
+
+	is_triggered_only = yes
+	
+	#accept
+	option = {
+	
+		hidden_effect = {
+		
+		division_template = {
+			name = "Guards Mot Diviziya"	#근위 차량화 소총사단			
+			priority = 2
+			is_locked = yes
+	
+			regiments = {
+				guards_motorized = { x = 0 y = 0 }
+				guards_motorized = { x = 0 y = 1 }
+				guards_motorized = { x = 0 y = 2 }
+		
+				guards_motorized = { x = 1 y = 0 }
+				guards_motorized = { x = 1 y = 1 }
+				guards_motorized = { x = 2 y = 2 }
+			
+				guards_motorized = { x = 2 y = 0 }
+				guards_motorized = { x = 2 y = 1 }
+
+				mot_artillery_brigade = { x = 3 y = 0 }
+				mot_artillery_brigade = { x = 3 y = 1 }
+				mot_artillery_brigade = { x = 3 y = 2 }
+			}
+			support = {
+				engineer = { x = 0 y = 0 } 	
+				recon = { x = 0 y = 1 }
+				anti_tank = { x = 0 y = 2 }
+				maintenance_company = { x = 0 y = 3 }
+				logistics_company = { x = 0 y = 4 }
+			}
+		}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Strelkovaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Strelkovaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Strelkovaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Strelkovaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Strelkovaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Strelkovaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Mot Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Mot Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+		}
+	}
+}
+
+#가랖3
+country_event = {
+	id = guards.4
+	title = guards.4.t
+	desc = guards.4.d
+	picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+	
+	#accept
+	option = {
+		name = guards.4.a
+		
+		hidden_effect = {
+		
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Strelkovaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Strelkovaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Strelkovaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Strelkovaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Strelkovaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Strelkovaya Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+		}
+	}
+}
+
+#근위 중형전차
+country_event = {
+	id = guards.5
+	title = guards.5.t
+	desc = guards.5.d
+	picture = GFX_report_event_german_troops
+
+	is_triggered_only = yes
+	
+	option = {
+		
+	division_template = {
+		name = "Guards Tankovaya Div" 	#근위 전차사단				
+		priority = 2
+		division_names_group = SOV_GTC_01
+		is_locked = yes
+	
+		regiments = {
+			guards_medium_armor = { x = 0 y = 0 }		
+			guards_medium_armor = { x = 0 y = 1 }
+			guards_medium_armor = { x = 0 y = 2 }		 	
+			guards_medium_armor = { x = 0 y = 3 }
+		
+			guards_medium_armor = { x = 1 y = 0 }		
+			guards_medium_armor = { x = 1 y = 1 }				
+		
+			guards_motorized = { x = 2 y = 0 }		
+			guards_motorized = { x = 2 y = 1 }		
+			guards_motorized = { x = 2 y = 2 }
+			guards_motorized = { x = 2 y = 3 }
+			
+			guards_motorized = { x = 3 y = 0 }		
+			guards_motorized = { x = 3 y = 1 }
+			guards_motorized = { x = 3 y = 2 }
+			
+			medium_sp_artillery_brigade = { x = 4 y = 0 }
+			medium_sp_artillery_brigade = { x = 4 y = 1 }
+			medium_sp_artillery_brigade = { x = 4 y = 2 }
+		}
+		support = {
+			artillery = { x = 0 y = 0 }
+			logistics_company = { x = 0 y = 1 } 
+			engineer = { x = 0 y = 2 }
+			maintenance_company = { x = 0 y = 3 }
+			recon { x = 0 y = 4 }
+			}
+		}
+		hidden_effect = {
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Tankovaya Div\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Tankovaya Div\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Tankovaya Div\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Tankovaya Div\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Tankovaya Div\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+		}
+	}
+}
+
+#근위 차량화 
+country_event = {
+	id = guards.6
+	title = guards.6.t
+	desc = guards.6.d
+	picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+
+	option = {
+		
+	division_template = {
+		name = "Guards Mech Div."  #근위 제병합동사단			
+		priority = 2
+		division_names_group = SOV_GMC_01
+		is_locked = yes
+		
+		regiments = {
+			guards_motorized = { x = 0 y = 0 }
+			guards_motorized = { x = 0 y = 1 }
+			guards_motorized = { x = 0 y = 2 }
+		
+			guards_motorized = { x = 1 y = 0 }		
+			guards_motorized = { x = 1 y = 1 }		 
+			guards_motorized = { x = 1 y = 2 }
+		
+			guards_motorized = { x = 2 y = 0 }		
+		
+			guards_medium_armor = { x = 3 y = 0 }	
+			guards_medium_armor = { x = 3 y = 1 }
+			guards_medium_armor = { x = 3 y = 2 }
+		
+			mot_artillery_brigade = { x = 4 y = 0 }
+			mot_artillery_brigade = { x = 4 y = 1 }
+			mot_anti_tank_brigade = { x = 4 y = 2 }
+		}
+			support = {
+				engineer = { x = 0 y = 0 } 	
+				recon = { x = 0 y = 1 }
+				anti_tank = { x = 0 y = 2 }
+				artillery = { x = 0 y = 3 }
+				logistics_company = { x = 0 y = 4 }
+			}
+		}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Mech Div.\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Mech Div.\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Mot Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Mot Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Mot Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Mot Diviziya\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+		}
+	}
+}
+
+#근위대 웨이브
+country_event = {
+	id = guards.8
+	title = guards.8.t
+	desc = guards.8.d
+	picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+	
+	option = {
+		name = guards.8.a
+		
+		hidden_effect = {
+		
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Tankovaya Div\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Tankovaya Div\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Tankovaya Div\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Tankovaya Div (HV)\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Tankovaya Div (HV)\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Tankovaya Div (HV)\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Mech Div\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Mech Div\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Mech Div\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Mech Div\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+		}
+	}
+}
+#근위 중전차
+country_event = {
+	id = guards.7
+	title = guards.7.t
+	desc = guards.7.d
+	picture = GFX_report_event_tank_factory
+
+	is_triggered_only = yes
+
+	option = {
+		name = guards.7.a
+	
+		division_template = {
+			name = "Guards Tankovaya Div (HV)" 	#근위 중전차사단				
+			priority = 2
+			division_names_group = SOV_GTC_01
+			is_locked = yes
+	
+			regiments = {
+				guards_heavy_armor = { x = 0 y = 0 }		
+				guards_heavy_armor = { x = 0 y = 1 }
+				guards_heavy_armor = { x = 0 y = 2 }
+				guards_heavy_armor = { x = 0 y = 3 }
+		
+				guards_heavy_armor = { x = 1 y = 0 }		 	
+				guards_heavy_armor = { x = 1 y = 1 }
+				guards_heavy_armor = { x = 1 y = 2 }
+			
+				guards_heavy_armor = { x = 2 y = 0 }	
+				guards_heavy_armor = { x = 2 y = 1 }	
+				guards_heavy_armor = { x = 2 y = 2 }					
+			
+				guards_motorized = { x = 3 y = 0 }		
+				guards_motorized = { x = 3 y = 1 }		
+				guards_motorized = { x = 3 y = 2 }
+				guards_motorized = { x = 3 y = 3 }
+				guards_motorized = { x = 3 y = 4 }
+		
+				heavy_sp_artillery_brigade = { x = 4 y = 0 }
+				heavy_sp_artillery_brigade = { x = 4 y = 1 }
+				medium_sp_artillery_brigade = { x = 4 y = 2 }
+				medium_sp_artillery_brigade = { x = 4 y = 3 }
+			}
+			support = {
+				recon = { x = 0 y = 0 }
+				logistics_company = { x = 0 y = 1 } 
+				engineer = { x = 0 y = 2 }
+				maintenance_company = { x = 0 y = 3 }
+				}
+			}
+			hidden_effect = {
+				219 = {
+					create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Tankovaya Div (HV)\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Tankovaya Div (HV)\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Tankovaya Div (HV)\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Tankovaya Div\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+		}
+	}
+}
+
+#근위대 웨이브
+country_event = {
+	id = guards.8
+	title = guards.8.t
+	desc = guards.8.d
+	picture = GFX_report_event_tank_factory
+
+	is_triggered_only = yes
+
+	option = {
+		name = guards.8.a
+		hidden_effect = {
+		
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Tankovaya Div\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Tankovaya Div\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Tankovaya Div\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Tankovaya Div (HV)\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Tankovaya Div (HV)\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Tankovaya Div (HV)\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Mech Div\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Mech Div\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Mech Div\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Mech Div\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+		}
+	}
+}
+
+#더미
+country_event = {
+	id = guards.9
+	title = guards.9.t
+	desc = guards.9.d
+	picture = GFX_report_event_royal_parade
+
+	is_triggered_only = yes
+	
+	option = {
+		name = guards.9.a
+		
+		hidden_effect = {
+		
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Tankovaya Div\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Tankovaya Div\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Tankovaya Div\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Tankovaya Div (HV)\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Tankovaya Div (HV)\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Tankovaya Div (HV)\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Mech Div\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Mech Div\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Mech Div\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+			219 = {
+				create_unit = {
+					division = "division_name = { is_name_ordered = yes name_order = 1 } division_template = \"Guards Mech Div\" start_experience_factor = 0.8 start_equipment_factor = 1"
+					owner = SOV
+					prioritize_location = 6380
+				}
+			}
+		}
+	}
+}
